@@ -1,7 +1,7 @@
 package com.example.reto3atenea.Model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import jakarta.persistence.*;
+import javax.persistence.*;
 import org.hibernate.annotations.Cascade;
 
 import java.util.List;

@@ -39,6 +39,7 @@ public class ClientService {
         if(client.getIdClient()!=null){
             Optional<Client> clientEncontrado = getClient(client.getIdClient());
             if(clientEncontrado.isPresent()){
+
                 if(client.getEmail()!=null){
                     clientEncontrado.get().setEmail(client.getEmail());
                 }
@@ -62,7 +63,7 @@ public class ClientService {
 
     }
 
-    public boolean deleteClient(int id){
+    public boolean delete(int id){
         Boolean respuesta = getClient(id).map(client -> {
             clientRepository.delete(client);
             return true;

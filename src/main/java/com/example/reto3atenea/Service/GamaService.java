@@ -55,7 +55,7 @@ public class GamaService {
 
     }
 
-    public boolean deleteGama(int id){
+    public boolean delete(int id){
         Boolean respuesta = getGama(id).map(gama -> {
             gamaRepository.delete(gama);
             return true;
@@ -63,6 +63,6 @@ public class GamaService {
         return respuesta;
     }
     //1:38:15
-
+// reto 4 40:00
 
 }

@@ -53,7 +53,7 @@ public class MessageService {
 
     }
 
-    public boolean deleteMessage(int id){
+    public boolean delete(int id){
         Boolean respuesta = getMessage(id).map(message -> {
             messageRepository.delete(message);
             return true;
