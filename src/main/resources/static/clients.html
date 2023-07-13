@@ -26,18 +26,23 @@
     "
   >
     <div style="width: 80%; text-align: center; margin: auto; padding: 2%">
-      <h1 class="display-2 fw-bold">RuedasLibres</h1>
-      <div class="d-grid gap-2" style="width:20%; text-align:center; margin:auto;">
+      <h1 class="display-2 fw-bold">Clientes</h1>
+      <div style="width:40%; text-align:center; margin:auto; margin: auto;">
+        <table id="tablaClientes" class="table table-bordered border-dark"></table>
 
-	    <button onclick="location.href='clients.html'"; class="btn btn-primary btn-lg">Clientes</button>
-        <button class="btn btn-danger btn-lg">Carros</button>
-        <button class="btn btn-success btn-lg">Gamas</button>
-        <button class="btn btn-info btn-lg">Carros</button>
-        <button class="btn btn-warning btn-lg">Mensajes</button>
-        <button class="btn btn-dark btn-lg">Gamas</button>
     </div>
 
-    
-    </div>
+    <h4 class="fs-2 fw-bold" >Registrar Cliente</h4>
+    <form >
+        <input class="form-control" id="email" placeholder="Nombre del Cliente"/><br>
+        <input class="form-control" id="password" placeholder="Correo del Cliente"/><br>
+        <input class="form-control" id="age" type="password" placeholder="Clave del Cliente"/><br>
+        <input class="form-control" id="nombre" type="number" placeholder="Edad del Cliente"/><br>
+    </form>
+
+<button class="btn btn-success btn-lg" onclick="guardarCliente()">Guardar Cliente</button> <button class="btn btn-primary btn-lg" onclick="location.href='homePage.html'">Volver</button>
+
+
+    </div>  
   </body>
 </html>
